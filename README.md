@@ -2,7 +2,7 @@
 
 1. express-mongo-app 
 
-2. Containerized the APP 
+2. Containerised APP 
 
 
  SERVICES:
@@ -37,11 +37,16 @@ YOU CAN ACCESS THE MONGODB DOCKER CONTAINER WHICH IS ACCESSIBLE AT PORT: 2717
   - INSTALL MONGOSH
   
   \# to check mongosh is install or not
-  
-  - mongosh --version
-  - mongosh --port 2717
+      
+      mongosh --version
+   
+      mongosh --port 2717
+      
   \# to switch the db
-  - use Tutorial
+     
+     use Tutorial
+     
   \# to show the collection data
-  - db.tutorials.find()
+   
+     db.tutorials.find()
   
