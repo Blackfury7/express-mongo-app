@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.dockerignore
+Dockerfile
+Dockerfile.dev
+Dockerfile-compose.yaml
+Dockerfile1
+Makefile

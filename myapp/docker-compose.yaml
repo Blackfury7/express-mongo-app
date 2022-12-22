@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  # MongoDB services
+  mongo_db:
+   container_name: db_container
+   image: mongo:latest
+   restart: always
+   ports:
+     - 2717:27017
+   volumes: 
+     - mongo_db:/data/db
+  
+  # Node API service
+  api:
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      MONGODB_URI: mongodb://mongo_db:27017/Tutorials
+      DB_NAME: tutorial
+    build: .
+    container_name: express-api-server
+    ports:
+      - 4000:3000
+    # FOR DEVELOPMENT :- MAPPING THE DOCKER VOLUME WITH CURRENT PROJECT
+    volumes:
+      - .:/usr/app
+    depends_on:
+      - mongo_db
+    # command: npm run start
+
+volumes:
+  mongo_db: {}
