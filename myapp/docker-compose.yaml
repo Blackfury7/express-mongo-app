@@ -21,7 +21,7 @@ services:
     container_name: express-api-server
     ports:
       - 4000:3000
-    # FOR DEVELOPMENT :- MAPPING THE DOCKER VOLUME WITH CURRENT PROJECT
+    # FOR DEVELOPMENT :- MAPPING THE CONTAINER WORKDIR WITH CURRENT PROJECT
     volumes:
       - .:/usr/app
     depends_on:
