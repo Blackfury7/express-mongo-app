@@ -31,12 +31,16 @@
 4. RUN THE DOCKER CONTAINERS WITH A SINGLE COMMAND
  
        docker-compose up
+       
+       
 
 NOW THE DOCKER CONTAINERS ARE RUNNING
 
+
+
 ## HOW TO CHECK WHETHER THE CONTAINER IS RUNNINNG PROPERLY
 
-1. YOU CAN ACCESS THE EXPRESS AT http://localhost:4000/ IN YOUR BROWSER
+1. YOU CAN ACCESS THE EXPRESS APP AT http://localhost:4000/ IN YOUR BROWSER
 
 2. YOU CAN ACCESS THE MONGODB DOCKER CONTAINER WHICH IS ACCESSIBLE AT PORT: 2717
 
@@ -44,15 +48,19 @@ NOW THE DOCKER CONTAINERS ARE RUNNING
  
   - INSTALL MONGOSH
   
-  \# to check mongosh is install or not
+  \# TO CHECK MONGOSH IS INSTALLED OR NOT
       
       mongosh --version
       
    \# TO LOGIN INTO DOCKER MONGODB
    
       mongosh --port 2717
+   
+   \# TO SHOW ALL AVAILABLE DB IN MONGO
+        
+      show dbs
       
-  \# to switch the db
+  \# TO SWITCH DB
      
      use Tutorial
      
