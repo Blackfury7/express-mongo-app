@@ -64,7 +64,7 @@ NOW THE DOCKER CONTAINERS ARE RUNNING
      
      use Tutorial
      
-  \# to show the collection data
+  \# TO SHOW TUTORIALS COLLECTION DATA
    
      db.tutorials.find()
   
