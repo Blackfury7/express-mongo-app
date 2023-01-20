@@ -4,7 +4,7 @@
 
 Project Homepage: [Home - Docker](https://www.docker.com/)
 
-Documentation: [Docker Documentation | Docker Documentation](https://docs.docker.com/)
+Documentation: [Docker Documentation](https://docs.docker.com/)
 
 <br><br>
 
